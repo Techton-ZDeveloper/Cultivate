@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <header class="p-4">
+    <div class=" max-w-7xl m-auto p-6 flex justify-between items-center ">
+      <h3 class=" text-green-400 text-[34px] font-bold">Cultivate</h3>
+
+      <div class=" md:block space-x-8 text-[20px] font-medium hidden text-gray-600">
+          <a class="text-gray-500 hover:text-emerald-300 font-bold" href="index.html">Home</a>
+          <a class="text-gray-500 hover:text-emerald-300 font-bold" href="about.html">About Us</a>
+          <a class="text-gray-500 hover:text-emerald-300 font-bold" href="courses.html">Course</a>
+          <a class="text-gray-500 hover:text-emerald-300 font-bold" href="instructors.html">Instructors</a>
+      </div>
+
+      <div class="flex gap-4">
+        <button class="hidden md:block px-8 py-3 bg-white text-green-500 rounded-xl font-medium border border-emerald-100 cursor-pointer hover:bg-gray-50">Login</button>
+        <button class="hidden md:block px-8 py-3 bg-green-500 text-white rounded-xl font-medium cursor-pointer hover:bg-emerald-600">Sign Up</button>
+      </div>
+
+      <div id="menu-btn" class="md:hidden w-2 h-2 space-y-1 p-">
+          <div class="w-8 h-1 bg-gray-900"></div>
+          <div class="w-6 h-1 bg-gray-900"></div>
+          <div class="w-4 h-1 bg-gray-900"></div>
+      </div>
+    </div>
+    <nav id="mobile-menu" class=" md:hidden hidden space-y-12 text-[18px] font-medium mt-4">
+      <div class="flex flex-col">
+        <a class="hover:text-gray-600 hover:bg-gray-50 px-6 py-2" href="index.html">Home</a>
+        <a class="hover:text-gray-600 hover:bg-gray-50 px-6 py-2" href="about.html">About Us</a>
+        <a class="hover:text-gray-600 hover:bg-gray-50 px-6 py-2" href="courses.html">Courses</a>
+        <a class="hover:text-gray-600 hover:bg-gray-50 px-6 py-2" href="instructors.html">Instructors</a>
+      </div>
+
+      <div class="flex flex-col space-y-4 mx-6">
+        <button class=" text-emerald-500 border border-emerald-500 rounded-2xl bg-white py-3 font-medium text-[14px]">Login</button>
+        <button class=" text-white border border-emerald-400 rounded-2xl bg-emerald-400 py-3 font-medium text-[14px]">Sign Up</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="max-w-7xl m-auto py-20">
+        <p class="text-3xl">Meet our instructors soon.....</p>
+    </div>
+  </main>
+  
+  <footer class="bg-white py-10">
+    <div class="max-w-7xl m-auto flex flex-col text-center md:flex-row justify-between">
+      <div>
+        <h2 class="text-emerald-500 text-2xl md:text-3xl font-bold">Cultivate</h2>
+        <p class="text-gray-500 py-2">Empowering student through personalized coaching</p>
+      </div>
+
+      <div class="space-x-7 py-4">
+        <a href="">Privacy Policy</a>
+        <a href="">Terms of Service</a>
+        <a href="">Contact Us</a>
+      </div>
+
+      <div>
+        <p class="text-gray-500 py-4">&copy;2026 Cultivate. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () =>
+    {mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
